@@ -128,11 +128,11 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
 /* EVEN-GAPS 15 Oct: one gap, top and bottom, for every content section */
 :root{--sg:72px}
 @media (max-width:860px){:root{--sg:56px}}
-#daivtube{padding-top:calc(var(--sg) - 1px);padding-bottom:calc(var(--sg) - 11px)}
-#why{padding-top:calc(var(--sg) - 5px);padding-bottom:calc(var(--sg) - 0px)}
-#work{padding-top:calc(var(--sg) - 4px);padding-bottom:calc(var(--sg) - 19px)}
-#what{padding-top:calc(var(--sg) - 4px);padding-bottom:calc(var(--sg) - 29px)}
-#about{padding-top:calc(var(--sg) - 5px);padding-bottom:calc(var(--sg) - 30px)}
+#daivtube{padding-top:calc(var(--sg) - 1px);padding-bottom:calc(var(--sg) - 10px)}
+#why{padding-top:calc(var(--sg) - 5px);padding-bottom:var(--sg)}
+#work{padding-top:calc(var(--sg) - 4px);padding-bottom:var(--sg)}
+#what{padding-top:calc(var(--sg) - 4px);padding-bottom:var(--sg)}
+#about{padding-top:calc(var(--sg) - 5px);padding-bottom:var(--sg)}
 #contact{padding-top:calc(var(--sg) - 4px);padding-bottom:calc(var(--sg) - 8px)}
 </style>
 </head>
@@ -199,6 +199,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
     .vs{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:40px}
     .vs .card.std{border-color:#d9443a;box-shadow:0 0 36px rgba(217,68,58,.14)}
     .vs .card.dave{border-color:#3fcf7a;box-shadow:0 0 40px rgba(63,207,122,.16)}
+    .vs{grid-template-columns:1fr;max-width:720px}
     .vs ul{list-style:none;margin-top:12px}
     .vs li{padding:7px 0;border-bottom:1px solid var(--line);font-size:15px;color:var(--muted)}
     .vs .dave li{color:inherit}
@@ -214,11 +215,6 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
   <h2>Not another editing tool. <span class="goldtxt">An agent that runs the work.</span></h2>
   <p class="intro">Standard content software gives you a toolbox and waits for you to use it. DAiV is agentic: he understands what you are trying to make, plans it, and carries it out, from the first idea to the finished, scheduled video.</p>
   <div class="vs">
-    <div class="card std"><div class="num">STANDARD SOFTWARE</div><h3>You operate it</h3><ul>
-      <li>One tool for each job: editor, generator, scheduler</li>
-      <li>You move the work between them by hand</li>
-      <li>It does exactly what you click, nothing more</li>
-      <li>You are the project manager</li></ul></div>
     <div class="card dave"><div class="num" style="text-transform:none">DAiV</div><h3>He operates for you</h3><ul>
       <li>One agent across the whole content ecosystem</li>
       <li>Ideas, AI generation, studio editing and scheduling in one flow</li>
@@ -248,7 +244,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
 <section id="what" data-tour="3"><div class="wrap">
   <div class="tag">What we do</div>
   <h2>Software as a service, <span class="goldtxt">built around AI agents</span></h2>
-  <p class="intro">AJ House builds applications where AI agents do the heavy lifting and people stay in control of the creative decisions.</p>
+  <p class="intro">Our flagship product is <span style="text-transform:none">DAiV</span>, Digital Audio Intelligent Video. We also build applications where AI agents do the heavy lifting and people stay in control of the creative decisions.</p>
   <div class="grid">
     <div class="card"><div class="num">01</div><h3>Autonomous applications</h3><p>End-to-end AI applications that plan, build and run multi-step workflows, with a human approving what matters.</p></div>
     <div class="card"><div class="num">02</div><h3>Creative Studio</h3><p>AI-produced video and content for small and medium businesses: quick, quality, and the client involved from the first draft.</p></div>
